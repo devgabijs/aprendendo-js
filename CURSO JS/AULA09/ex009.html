@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
    <style>
-body { background-color: rgb(2, 26, 160);
+body { background-color: rgb(143, 156, 228);
     color:rgb(252, 249, 246);
     font: normal 14pt arial;
+}
+
 
    </style>
 </head>
@@ -16,9 +18,15 @@ body { background-color: rgb(2, 26, 160);
   <h1>Iniciando estudos DOM</h1>
   <p>Aqui vai o resultado</p>
   <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-  <div>Clique em mim</div>
+  <div class='msg'>Clique em mim </div>
   <script>
-    window.document.write(window.document.URL)
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[1]
+   /* var d = window.document.getElementById('msg')
+    d.style.background = 'green'
+    d.innerText = 'Estou aguardando...' */
+    var d = window.document.querySelector('div.msg')
+   d.style.background ='blue'
     </script>
 </body>
 </html>
